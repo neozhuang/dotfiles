@@ -1,0 +1,12 @@
+[user]
+	name = Zhuangzhuang Zhang
+	email = zhuangzhuangzhang97@gmail.com
+
+[alias]
+    st = status
+    br = branch
+    ci = commit
+    co = checkout
+    lg = log --oneline --graph --decorate
+[core]
+	editor = nvim

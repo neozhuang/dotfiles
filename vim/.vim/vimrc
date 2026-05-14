@@ -1,0 +1,20 @@
+" My personal Vim config
+
+source ~/.vim/options.vim
+source ~/.vim/keybinds.vim
+
+" dead simple plugin manager 
+" source ~/.vim/simple-plugin-manager.vim
+
+" vim-plug manager: https://github.com/junegunn/vim-plug
+call plug#begin()
+" List your plugins here
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'yegappan/lsp'
+call plug#end()
+
+source ~/.vim/lsp.vim
+source ~/.vim/plugins-config.vim
