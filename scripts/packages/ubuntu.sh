@@ -7,6 +7,8 @@ sudo apt install -y \
     cmake \
     curl \
     wget \
+    rustc \
+    cargo
 
 # Archive and compression tools.
 sudo apt install -y \

@@ -9,7 +9,9 @@ sudo dnf install -y \
     cmake \
     curl \
     wget \
-    procps-ng
+    procps-ng \
+    rust \
+    cargo 
 
 # Archive and compression tools.
 sudo dnf install -y \

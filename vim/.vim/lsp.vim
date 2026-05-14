@@ -8,18 +8,6 @@ let lspServers = [
             \   filetype: ['c', 'cpp', 'objc', 'objcpp'],
             \   path: 'clangd',
             \   args: ['--background-index', '--clang-tidy', '--cross-file-rename']
-            \ },
-            \ #{
-            \   name: 'texlab',
-            \   filetype: ['tex'],
-            \   path: 'texlab',
-            \   args: []
-            \ },
-            \ #{
-            \   name: 'marksman',
-            \   filetype: ['markdown'],
-            \   path: 'marksman',
-            \   args: []
             \ }
             \ ]
 autocmd User LspSetup call LspAddServer(lspServers)

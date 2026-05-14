@@ -25,8 +25,7 @@ case "$ID" in
         ;;
 esac
 
-echo "Installing fonts..."
-bash "$SCRIPT_DIR/fonts.sh"
+echo "Installing packages by brew..."
+sh "$SCRIPT_DIR/packages/brew.sh"
 
-
-echo "Done."
+echo "Packages Done."
