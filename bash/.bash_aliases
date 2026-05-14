@@ -19,6 +19,3 @@ alias vgrl='valgrind \
     --track-origins=yes \
     --log-file=valgrind.log'
 
-# 切换到快捷目录
-alias cdsnip='cd ~/.local/share/nvim/lazy/friendly-snippets/snippets/'
-alias cdw='cd ~/coding-exercises/APUE.3e/'

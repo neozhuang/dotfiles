@@ -124,8 +124,8 @@ export PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
 export MANPATH=/usr/local/texlive/2025/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/usr/local/texlive/2025/texmf-dist/doc/info:$INFOPATH
 
-# Replace the default finder find with fd-find in fzf
-export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow'
+# Replace the default finder find with fd in fzf
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow'
 
 if [ -d "$HOME/.cargo/bin" ] ; then
 PATH="$HOME/.cargo/bin:$PATH"
