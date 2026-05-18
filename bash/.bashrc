@@ -62,3 +62,5 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow'
 # A smarter cd command. Supports all major shells.
 eval "$(zoxide init bash)"
 
+export EDITOR=vim
+export VISUAL=vim

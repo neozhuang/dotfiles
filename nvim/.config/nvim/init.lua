@@ -6,3 +6,4 @@ require("config.autocmds")
 
 -- Plugins module
 require("plugins")
+

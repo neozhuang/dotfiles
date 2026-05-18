@@ -30,13 +30,11 @@ rm -f ~/.rgignore
 mkdir -p ~/.config
 
 # kitty
-# file link not directory link
-rm -f ~/.config/kitty/kitty.conf
-rm -f ~/.config/kitty/kitty.bak
+rm -rf ~/.config/kitty
 
 # neofetch
 rm -rf ~/.config/neofetch
- 
+
 # nvim
 rm -rf ~/.config/nvim
 

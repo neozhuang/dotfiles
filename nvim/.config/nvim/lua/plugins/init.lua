@@ -17,7 +17,10 @@ vim.pack.add({
     'https://github.com/3rd/image.nvim',
     'https://github.com/saghen/blink.lib',
     'https://github.com/saghen/blink.cmp',
+    'https://github.com/rafamadriz/friendly-snippets',
     'https://github.com/nvim-lualine/lualine.nvim',
+    'https://github.com/neozhuang/todolist.nvim',
+    -- { src = "/home/zhuang/projects/todolist.nvim" },
 })
 
 require("plugins.colortheme")

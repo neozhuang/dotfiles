@@ -58,8 +58,7 @@ sudo dnf install -y \
 
 
 # Terminal emulator and desktop integration.
-sudo dnf install -y \
-    kitty
+
 
 # Network and diagnostics tools.
 

@@ -70,3 +70,12 @@ require("image").setup({
 -- lualine
 -- A blazing fast and easy to configure neovim statusline plugin written in pure lua
 require("lualine").setup()
+
+
+-- todolist
+require("todolist").setup({
+    -- create you only file first
+    target_file = "~/Documents/todo/todo.md",
+    border = "rounded", -- single, rounded, etc.
+})
+

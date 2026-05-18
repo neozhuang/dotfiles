@@ -1,0 +1,12 @@
+
+new_tab
+layout tall
+enabled_layouts tall,fat,grid,horizontal,splits,stack,vertical
+set_layout_state {"main_bias": [0.5843750000000002, 0.4156249999999998], "biased_map": {}, "opts": {"full_size": 1, "bias": 50, "mirrored": "n"}, "class": "Tall", "all_windows": {"active_group_idx": 0, "active_group_history": [1, 2], "window_groups": [{"id": 1, "window_ids": [1]}, {"id": 2, "window_ids": [2]}]}}
+cd /home/zhuang
+
+launch 'kitty-unserialize-data={"id": 1, "cmd_at_shell_startup": "neofetch"}'
+focus
+launch 'kitty-unserialize-data={"id": 2, "cmd_at_shell_startup": "opencode"}'
+
+focus_tab 0

@@ -47,8 +47,7 @@ sudo apt install -y \
     perl
 
 # Terminal emulator and desktop integration.
-sudo apt install -y \
-    kitty 
+
 
 # Network and diagnostics tools.
 
