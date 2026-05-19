@@ -61,3 +61,7 @@ yy() {
 # cdf ~     # 从家目录开始找
 # yy        # 打开 yazi，退出后自动 cd 到 yazi 当前目录
 
+alias oc='opencode'
+
+# fzf file and nvim it
+alias vf='nvim "$(fd --type f --hidden --exclude .git | fzf)"'

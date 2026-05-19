@@ -54,6 +54,12 @@ sudo dnf install -y \
     pipx \
     perl
 
+# for my blog-source repo
+sudo dnf install -y \
+    nodejs \
+    npm \
+    pandoc
+
 # Common native development libraries.
 
 
