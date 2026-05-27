@@ -5,6 +5,8 @@ local map = vim.keymap.set
 vim.g.mapleader = " "
 vim.g.maplocalleader = ' '
 
+-- simple save op
+map("n", "<leader>w", "<cmd>w<CR>")
 -- make file executable
 map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
@@ -27,3 +29,6 @@ map('n', '<leader>cr', function()
 	vim.notify('Copied: ' .. path)
 end, { desc = 'Copy relative path' })
 
+-- ctrl + j/k to sroll the quickfix list and center current line
+map("n", "<C-j>", "<cmd>cnext<CR>zz")
+map("n", "<C-k>", "<cmd>cprev<CR>zz")

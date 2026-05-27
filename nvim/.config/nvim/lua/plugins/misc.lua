@@ -28,7 +28,7 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Lazygit.nvim
 -- Plugin for calling lazygit from within neovim
-vim.keymap.set('n', '<leader>gg', '<cmd>LazyGit<CR>', { desc = 'Lazygit' })
+vim.keymap.set('n', '<leader>lg', '<cmd>LazyGit<CR>', { desc = 'Lazygit' })
 vim.keymap.set('n', '<leader>gb', function() vim.ui.open(vim.fn.systemlist('git remote get-url origin')[1]) end,
     { desc = 'Open git remote' })
 

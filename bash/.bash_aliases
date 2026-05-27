@@ -61,7 +61,14 @@ yy() {
 # cdf ~     # 从家目录开始找
 # yy        # 打开 yazi，退出后自动 cd 到 yazi 当前目录
 
+# fzf file and nvim it
+alias nf='nvim "$(fd --type f --hidden --exclude .git | fzf)"'
+
+# AI tools
 alias oc='opencode'
 
-# fzf file and nvim it
-alias vf='nvim "$(fd --type f --hidden --exclude .git | fzf)"'
+# dir operations
+alias ..='cd ..'
+alias ...='cd ../..'
+alias n='nvim'
+alias t='flatpak run io.typora.Typora'

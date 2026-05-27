@@ -5,6 +5,7 @@
 -- Performant, batteries-included completion plugin for Neovim
 local cmp = require("blink.cmp")
 -- cmp.build():wait(60000)
+
 cmp.setup({
     -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
     -- 'super-tab' for mappings similar to vscode (tab to accept)
@@ -23,18 +24,30 @@ cmp.setup({
     -- (Default) Only show the documentation popup when manually triggered
     -- completion = { documentation = { auto_show = false } },
     completion = {
-    documentation = {
-        auto_show = true,
-        auto_show_delay_ms = 500,
+        documentation = {
+            auto_show = true,
+            auto_show_delay_ms = 500,
+        },
+        ghost_text = {
+            enabled = true,
+        },
     },
-    ghost_text = {
-        enabled = true,
-    },
-},
 
     -- (Default) list of enabled providers defined so that you can extend it
     -- elsewhere in your config, without redefining it, due to `opts_extend`
-    sources = { default = { 'lsp', 'path', 'snippets', 'buffer' } },
+    sources = {
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
+        providers = {
+            snippets = {
+                opts = {
+                    extended_filetypes = {
+                        c = { "cdoc" },
+                        cpp = { "cppdoc" },
+                    },
+                },
+            },
+        },
+    },
 
     -- (Default) Rust fuzzy matcher for typo resistance and significantly better performance
     -- You may use a lua implementation instead by using `implementation = "lua"`

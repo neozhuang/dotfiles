@@ -10,6 +10,7 @@ vim.pack.add({
 	--'https://github.com/mfussenegger/nvim-dap',
 	'https://github.com/stevearc/oil.nvim',
     'https://github.com/nvim-tree/nvim-web-devicons',
+    'https://github.com/nvim-tree/nvim-tree.lua',
 	'https://github.com/kdheepak/lazygit.nvim',
 	'https://github.com/esmuellert/codediff.nvim',
 	--'https://github.com/goolord/alpha-nvim',
@@ -29,3 +30,4 @@ require("plugins.fzf")
 require("plugins.cmp")  -- cmp should be placed before lsp
 require("plugins.lsp")
 require("plugins.misc")
+require("plugins.filetree")

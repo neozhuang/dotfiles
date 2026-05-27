@@ -44,7 +44,8 @@ sudo dnf install -y \
     gdb \
     glibc-devel \
     kernel-headers \
-    kernel-devel
+    kernel-devel \
+    bear
 
 # Language runtimes and package helpers.
 sudo dnf install -y \
@@ -60,16 +61,10 @@ sudo dnf install -y \
     npm \
     pandoc
 
-# Common native development libraries.
+# Programming Language
+sudo dnf install -y \
+    golang
 
-
-# Terminal emulator and desktop integration.
-
-
-# Network and diagnostics tools.
-
-
-# System monitoring and process inspection.
-
-
-# Disk and filesystem utilities.
+# latex
+sudo dnf install texlive-scheme-full
+sudo dnf install zathura zathura-pdf-poppler

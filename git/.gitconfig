@@ -10,3 +10,5 @@
     lg = log --oneline --graph --decorate
 [core]
 	editor = nvim
+[init]
+	defaultBranch = main

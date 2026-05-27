@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
-set -eu
-#!/usr/bin/env sh
+
 set -eu
 
 if [ ! -x "/home/linuxbrew/.linuxbrew/bin/brew" ]; then
@@ -28,3 +27,9 @@ brew install \
   marksman \
   texlab 
 
+# lsp
+brew install \
+  yaml-language-server
+
+# AI tool
+brew install --cask codex

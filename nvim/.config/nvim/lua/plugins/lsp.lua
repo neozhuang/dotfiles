@@ -11,3 +11,15 @@ vim.lsp.enable({
   "marksman", -- Markdown
   "texlab",  -- LaTeX
 })
+
+-- keymap
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(event)
+    local map = function(lhs, rhs, desc)
+      vim.keymap.set("n", lhs, rhs, { buffer = event.buf, desc = desc })
+    end
+
+    map("gd", vim.lsp.buf.definition, "Go to definition")
+    map("gD", vim.lsp.buf.declaration, "Go to declaration")
+  end,
+})
