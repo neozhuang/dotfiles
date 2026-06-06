@@ -12,6 +12,10 @@
       "rev": "8afc229d38dc13ce71b2ffbb860084b2c726e061",
       "src": "https://github.com/esmuellert/codediff.nvim"
     },
+    "diagram.nvim": {
+      "rev": "89d8110ec15021ac9a03ff2317d27b900c45bf60",
+      "src": "https://github.com/3rd/diagram.nvim"
+    },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"

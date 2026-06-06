@@ -63,6 +63,7 @@ yy() {
 
 # fzf file and nvim it
 alias nf='nvim "$(fd --type f --hidden --exclude .git | fzf)"'
+alias vf='vim "$(fd --type f --hidden --exclude .git | fzf)"'
 
 # AI tools
 alias oc='opencode'

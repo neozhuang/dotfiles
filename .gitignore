@@ -51,6 +51,7 @@ logs/
 # =========================
 vim/.vim/plugged/
 .netrwhist
+plug.vim.old
 
 # =========================
 # Neovim

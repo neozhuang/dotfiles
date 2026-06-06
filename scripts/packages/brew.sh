@@ -24,12 +24,12 @@ brew install \
   anomalyco/tap/opencode \
   zoxide \
   tree-sitter-cli \
-  marksman \
-  texlab 
 
 # lsp
 brew install \
-  yaml-language-server
+  yaml-language-server \
+  marksman \
+  texlab 
 
 # AI tool
 brew install --cask codex

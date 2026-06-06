@@ -68,3 +68,7 @@ sudo dnf install -y \
 # latex
 sudo dnf install texlive-scheme-full
 sudo dnf install zathura zathura-pdf-poppler
+
+# misc
+sudo dnf install calibre
+sudo dnf install python3-tzlocal
