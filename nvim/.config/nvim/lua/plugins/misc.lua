@@ -72,10 +72,60 @@ require("image").setup({
 require("lualine").setup()
 
 
--- todolist
-require("todolist").setup({
-    -- create you only file first
-    target_file = "~/workspace/projects/todo/todo.md",
-    border = "rounded", -- single, rounded, etc.
+-- daily-notes
+-- vim.opt.runtimepath:prepend("/home/zhuang/workspace/projects/daily-notes.nvim")
+require("daily-notes").setup({
+  daily_notes_dir = "~/workspace/resources/daily-notes/2026/06/",
+  daily_notes_template = "~/workspace/resources/daily-notes/templates/default.md",
+  border = "rounded",
+ title= " Daily Notes ",
 })
 
+
+-- img-clip
+require("img-clip").setup({
+    -- add options here
+    -- or leave empty for defaults
+})
+
+vim.keymap.set(
+    "n",
+    "<leader>p",
+    "<cmd>PasteImage<CR>",
+    { desc = "Paste image from system clipboard" }
+)
+
+-- need fzf-lua
+vim.keymap.set("n", "<leader>if", function()
+    require("fzf-lua").files({
+        actions = {
+            ["default"] = function(selected, opts)
+                local path = require("fzf-lua.path")
+                local filepath = path.entry_to_file(selected[1], opts).path
+
+                require("img-clip").paste_image(nil, filepath)
+            end,
+        },
+    })
+end, {
+    desc = "Insert existing image via fzf",
+})
+
+-- need Oil.nvim
+vim.keymap.set("n", "<leader>io", function()
+    local oil = require("oil")
+
+    local entry = oil.get_cursor_entry()
+    if not entry then
+        return
+    end
+
+    local filename = entry.name
+    local dir = oil.get_current_dir()
+
+    oil.close()
+
+    require("img-clip").paste_image({}, dir .. filename)
+end, {
+    desc = "Insert existing image via Oil",
+})

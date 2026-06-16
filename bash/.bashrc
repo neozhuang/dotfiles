@@ -64,3 +64,8 @@ eval "$(zoxide init bash)"
 
 export EDITOR=vim
 export VISUAL=vim
+
+# secret file: ai-api-key
+if [ -f ~/.secrets/env ]; then
+    . ~/.secrets/env
+fi

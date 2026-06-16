@@ -8,9 +8,17 @@
       "rev": "f29d8bac6549bc1e7d699c83f680823d7def98bd",
       "src": "https://github.com/saghen/blink.lib"
     },
+    "codecompanion.nvim": {
+      "rev": "123d8b3428b321ade9a8c1b749a65e4021a14dd0",
+      "src": "https://www.github.com/olimorris/codecompanion.nvim"
+    },
     "codediff.nvim": {
       "rev": "8afc229d38dc13ce71b2ffbb860084b2c726e061",
       "src": "https://github.com/esmuellert/codediff.nvim"
+    },
+    "daily-notes.nvim": {
+      "rev": "4f2cfb6325b53166465d88f02c5cabf2a81cad24",
+      "src": "https://github.com/neozhuang/daily-notes.nvim"
     },
     "diagram.nvim": {
       "rev": "89d8110ec15021ac9a03ff2317d27b900c45bf60",
@@ -28,6 +36,10 @@
       "rev": "faccd45b2e70e50d575be9e353534157b928bbf3",
       "src": "https://github.com/3rd/image.nvim"
     },
+    "img-clip.nvim": {
+      "rev": "b6ddfb97b5600d99afe3452d707444afda658aca",
+      "src": "https://github.com/hakonharnes/img-clip.nvim"
+    },
     "lazygit.nvim": {
       "rev": "a04ad0dbc725134edbee3a5eea29290976695357",
       "src": "https://github.com/kdheepak/lazygit.nvim"
@@ -43,6 +55,10 @@
     "nvim-lspconfig": {
       "rev": "451d4ef9abd4f0f08e379ef0d55d1c391b6125a7",
       "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-surround": {
+      "rev": "8b47db616ef658b8fc27e61db2896aa2f40134de",
+      "src": "https://github.com/kylechui/nvim-surround"
     },
     "nvim-tree.lua": {
       "rev": "07f541fcaa4a5ae019598240362449ab7e9812b3",
@@ -60,13 +76,13 @@
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
       "src": "https://github.com/stevearc/oil.nvim"
     },
+    "plenary.nvim": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "https://www.github.com/nvim-lua/plenary.nvim"
+    },
     "render-markdown.nvim": {
       "rev": "629eb9533ec989d9d5c6cab8f3ad5372422c24e0",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
-    },
-    "todolist.nvim": {
-      "rev": "c4c1b3e0daaa7f138a70fe1fa6c6fcb3b1a166d6",
-      "src": "https://github.com/neozhuang/todolist.nvim"
     },
     "tokyonight.nvim": {
       "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",

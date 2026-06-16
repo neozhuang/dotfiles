@@ -72,3 +72,6 @@ sudo dnf install zathura zathura-pdf-poppler
 # misc
 sudo dnf install calibre
 sudo dnf install python3-tzlocal
+
+# clip
+sudo dnf install grim slurp wl-clipboard

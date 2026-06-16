@@ -71,5 +71,7 @@ alias oc='opencode'
 # dir operations
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias n='nvim'
 alias t='flatpak run io.typora.Typora'
